@@ -2,8 +2,10 @@
 const { argv } = require('node:process');
 
 if (argv.length > 2) {
-  for (let i = 2; i < argv.length; i++) {
-    console.log(argv[i]);
+  if (argv.length === 3) {
+    console.log('Argument found');
+  } else {
+    console.log('Arguments found');
   }
 } else {
   console.log('No argument');
