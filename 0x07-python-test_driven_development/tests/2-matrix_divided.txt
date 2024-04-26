@@ -1,0 +1,38 @@
+=================================
+
+Test for `2-matrix_divided` module
+
+Using `2-matrix_divided` module
+_________________________________
+
+Import the function from the module
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Check for module docstring
+	>>> d = __import__("2-matrix_divided").__doc__
+	>>> len(d) > 1
+	True
+
+Check for function docstring
+	>>> f = __import__("2-matrix_divided").matrix_divided.__doc__
+	>>> len(f) > 1
+	True
+
+Check for regular matrix division
+	>>> matrix = [[1, 2, 3], [4, 5, 6]]
+	>>> print(matrix_divided(matrix, 3))
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Print the matrix
+	>>> print(matrix)
+	[[1, 2, 3], [4, 5, 6]]
+
+
+Check if all elements are integers
+	>>> matr = [[1, 2, 4], ['b', 2, 'F']]
+	>>> matrix_divided(matr, 2)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+-------- End -----------
