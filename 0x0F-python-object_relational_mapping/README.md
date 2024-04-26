@@ -10,17 +10,17 @@ It is an ORM for python that is inbuilt.
 
 ## To use SQLAlchemy
 
-Install `sqldb` in your machine (Ubuntu 20.4)
-`sudo apt update`
-`sudo apt install mysql-server`
+Install `sqldb` in your machine (Ubuntu 20.4)<br>
+`sudo apt update`<br>
+`sudo apt install mysql-server`<br>
 Enable the service
-`sudo service start mysql`
+`sudo service start mysql`<br>
 
 ## Configure MySQL
 
-`sudo mysql`
-`> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password 'password'`
-`> exit`
+`sudo mysql`<br>
+`> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password 'password'`<br>
+`> exit`<hr>
 
 # Run security script
 
