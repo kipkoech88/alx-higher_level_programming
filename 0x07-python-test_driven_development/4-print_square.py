@@ -19,4 +19,4 @@ def print_square(size):
         raise TypeError("size must be an integer")
     else:
         for i in range(0, size):
-            print('X' * size)
+            print('#' * size)

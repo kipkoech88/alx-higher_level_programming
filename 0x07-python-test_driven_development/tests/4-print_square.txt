@@ -37,10 +37,10 @@ Check when Arg is a float and less than 0
 
 Check when correct values are entered
 	>>> print_square(4)
-	XXXX
-	XXXX
-	XXXX
-	XXXX
+	####
+	####
+	####
+	####
 
 
 
