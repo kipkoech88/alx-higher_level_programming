@@ -1,0 +1,47 @@
+==========================================================
+
+Tests for `4-print_square` module
+
+------------- Start --------------
+
+Import the `print_square` function
+	>>> print_square = __import__("4-print_square").print_square
+
+Check for docstring in the module
+	>>> m = __import__("4-print_square").__doc__
+	>>> len(m) > 0
+	True
+
+Check for docstring in `print_square` function
+	>>> f = __import__("4-print_square").print_square.__doc__
+	>>> len(f) > 0
+	True
+
+Check for when string is passed as an Arg
+	>>> print_square("hi")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Check when size is less than 0
+	>>> print_square(-12)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+Check when Arg is a float and less than 0
+	>>> print_square(-12.34)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+Check when correct values are entered
+	>>> print_square(4)
+	XXXX
+	XXXX
+	XXXX
+	XXXX
+
+
+
+================= End ====================
