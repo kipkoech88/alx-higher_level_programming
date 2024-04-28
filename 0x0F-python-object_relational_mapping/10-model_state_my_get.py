@@ -16,4 +16,7 @@ if __name__ == "__main__":
     session = Session()
     query = session.query(State).filter(State.name == sys.argv[4])
     row = query.first()
-    print(row.id)
+    if row is None:
+        print('Not found')
+    else:
+        print(row.id)
