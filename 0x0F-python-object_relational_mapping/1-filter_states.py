@@ -7,9 +7,6 @@ where name matches the argument
 """
 
 if __name__ == "__main__":
-    """ Takes 4 command line arguments ie username
-    password, db name and name to be searched for
-    """
     db = MySQLdb.connect(host="localhost",
                          user=sys.argv[1],
                          passwd=sys.argv[2],
@@ -21,5 +18,3 @@ if __name__ == "__main__":
     rows = cur.fetchall()
     for row in rows:
         print(row)
-    cur.close()
-    db.close()
