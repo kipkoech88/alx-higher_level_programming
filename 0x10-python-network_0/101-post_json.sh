@@ -1,3 +1,3 @@
 #!/bin/bash
 # submits data via post
-curl -s -X POST -H "Content-Type: application/json" -d "$2" "$1"
+curl -s -X POST -d "@$2" -H "Content-Type: application/json" "$1"
