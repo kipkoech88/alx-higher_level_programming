@@ -14,4 +14,4 @@ if __name__ == "__main__":
     request = urllib.request.Request(url, data)
     with urllib.request.urlopen(request) as response:
         """Display body of the response"""
-        print("Your email is: {}".format(response.read().decode('utf8')))
+        print(response.read().decode('utf8'))
